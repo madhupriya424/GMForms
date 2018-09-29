@@ -1,31 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-  <!-- <link rel="stylesheet" type="text/css" href="./src/bootstrap.css"> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
-<body align="centre">
-    <nav class="navbar navbar-default">
-    <div class="container-fluid">
-    <div class="example-container">
-    <mat-form-field hintLabel="Max 10 characters">
-      <input matInput #input maxlength="10" placeholder="Enter some input">
-      <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
-    </mat-form-field>
-   </div>
-   <div>
-    <mat-form-field>
-      <mat-select placeholder="Select me">
-        <mat-option value="option">Option</mat-option>
-      </mat-select>
-      <mat-hint align="end">Here's the dropdown arrow ^</mat-hint>
-    </mat-form-field>
-  </div>
-  </div>
- </nav> 
-</body>
-</html>
 
+<div>
+  <mat-form-field>
+  <input matInput placeholder="Untitled form">
+</mat-form-field>
+<br>
+<mat-form-field>
+  <input matInput placeholder="Description">
+</mat-form-field>
+</div>
 
+<div *ngFor="let c of question">
+  <app-question></app-question>
+</div>
 
+<div>
+    <button mat-raised-button color="primary" (click)="onAddQuestion()">Add Question</button>
+</div>

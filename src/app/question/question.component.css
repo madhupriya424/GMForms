@@ -1,0 +1,31 @@
+.card {
+    background: white;
+    max-width: 600px; 
+    min-height: 200px;
+    top: -50px;
+    position: relative;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .example-radio-group {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  
+  .example-radio-button {
+    margin: 5px;
+  }
+  
+  .example-selected-value {
+    margin: 15px 0;
+  }
+  

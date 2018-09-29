@@ -7,10 +7,13 @@ import {MatFormFieldModule} from '@angular/material/form-field';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-
+  question=[];
   constructor() { }
 
   ngOnInit() {
   }
 
+  onAddQuestion(){
+    this.question.push(" ");  
+  }
 }

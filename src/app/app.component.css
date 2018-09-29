@@ -1,0 +1,13 @@
+.container {
+    background: white;
+    max-width: 600px; 
+    min-height: 300px;
+    top: -50px;
+    position: relative;
+}
+
+.content {
+    background:#ede7f6;
+    position: relative;
+    min-height: 600px;
+}

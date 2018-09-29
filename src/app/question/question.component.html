@@ -1,0 +1,30 @@
+<div>
+  <mat-card class="card">
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Untitled Question" value="Enter the question">
+      </mat-form-field>
+
+      <div class="input-group">
+        <span class="input-group-addon">
+          <input type="radio" aria-label="...">
+          <input matInput placeholder="Option 1">
+        </span> 
+      </div>
+      <br>
+      <div>
+          <span class="input-group-addon">
+            <input  type="radio" >
+            <input (click)="inputOption()" matInput placeholder="Add other or 'ADD Other' ">
+          </span>
+      </div>
+
+      <div *ngFor="let c of option; let i=index">
+          <span class="input-group-addon">
+            <input  type="radio" >
+            <input (click)="inputOption()" matInput placeholder="Add other or 'ADD Other' " (click)="deleteFieldValue(i)">
+          </span>
+      </div>
+    </form>
+  </mat-card>
+</div>
